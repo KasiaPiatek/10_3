@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    overflow: scroll;
+}
+
+.carousel {
+	margin: 100px auto;
+	height: 400px;
+	width: 600px;
+}
+
+.item {
+    height: 300px;
+}
+
+.img-responsive {
+	height: 125px;
+	width: 125px;
+	margin: 10px auto;
+}
+
+.buttonbtn {
+  text-align: center;
+}
+
