@@ -1,11 +1,9 @@
-
 $(function(){
-var carouselList = $("#carousel ul");
-var changeSlide = 
-
+var carouselList = setInterval;
+var setInterval = 
 
 	setInterval(changeSlide, 3000); //every 3 seconds, it performs a function to change the slide
-	CarouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
+	carouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
 });
 
 $(function(moveFirstSlide) {
