@@ -1,16 +1,21 @@
-$(function(){
-var carouselList = setInterval;
-var setInterval = 
+$(document).ready(function(){
+	var carouselList = $("#carousel ul");
+	var moveFirstSlide = function(){
+		var firstItem = carouselList.find("li:first");
+		var lastItem = carouselList.find("li:last");
 
-	setInterval(changeSlide, 3000); //every 3 seconds, it performs a function to change the slide
-	carouselList.animate({'marginLeft':-400}, 500, moveFirstSlide);
-});
+		lastItem.after(firstItem);
+		carouselList.css({marginLeft:0});
+	};
 
-$(function(moveFirstSlide) {
+	
 
-	var firstItem = carouselList.find("li:first");
-	var lastItem = carouselList.find("li:last");
+	var changeSlide = function(){
+		carouselList.animate({
+			marginLeft:-400
+		}, 500, moveFirstSlide);
+	};
 
-	lastItem.after(firstItem);
-	carouselList.css({marginLeft:0});
+	setInterval(changeSlide, 3000);
+
 });
